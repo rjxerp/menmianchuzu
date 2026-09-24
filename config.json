@@ -1,0 +1,21 @@
+{
+  "database_path": "E:\\租赁合同管理系统_Web\\Data\\ZHMY_Contract.db",
+  "app_settings": {
+    "theme": "default",
+    "auto_backup": false,
+    "backup_interval": 24
+  },
+  "logging": {
+    "log_dir": "logs",
+    "log_level": "INFO",
+    "max_log_size": 10485760,
+    "backup_count": 5,
+    "enable_console": true
+  },
+  "operation_logging": {
+    "batch_size": 10,
+    "max_batch_age": 60,
+    "async_processing": false
+  },
+  "secret_key": "deeed66c142184d0852dce79786894dad77b6320ec134d53cecf59c39ea9789a98ff6e578158d5929a51401aedb931f1"
+}

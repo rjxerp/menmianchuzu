@@ -1,0 +1,44 @@
+# 租赁合同管理系统 Web 版 - Git 忽略规则
+# 用途：防止临时文件/缓存/备份混入版本控制（项目尚未 git init，预留）
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 备份文件（一律归档到项目外 F:\Hermes\Hermes_归档\，禁止在项目内产生）
+*.bak
+*.bak_*
+*_copy
+*~*
+
+# 临时文件
+*.tmp
+*.log.tmp
+Thumbs.db
+.DS_Store
+
+# 日志（运行日志自动轮转，不入库）
+logs/
+backend/logs/
+
+# 数据库（正式库由系统备份功能管理，严禁直接复制入库）
+Data/*.db
+Data/*.db-wal
+Data/*.db-shm
+Data/*.db.backup*
+auto_backup/*.db
+auto_backup/*.db-wal
+auto_backup/*.db-shm
+
+# 测试残留（测试运行产生的隔离库与备份）
+backend/_smoke_test/
+backend/_fix_test/
+
+# 配置文件（含 JWT 密钥，严禁入库）
+config.json
+
+# 启动器记忆的解释器路径（本机专属，不入库）
+backend/.python_exe.txt
